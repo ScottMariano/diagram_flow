@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama Mermaid</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <div class="mermaid">
+        graph TD
+        style auth fill:#aef6f7
+        style recibos fill:#fdff6e
+        style condominios fill:#fdff6e
+        style condominos fill:#fdff6e
+        style notifications fill:#aef6f7
+        style comodidades fill:#fdff6e
+        style apps-middle fill:#cccccc
+        style gdp fill:#97f07b
+        style repp fill:#fdff6e
+        style acordos fill:#97f07b
+        style despesas fill:#97f07b
+        style resin fill:#97f07b
+        style ppc fill:#97f07b
+        style reserva fill:#97f07b
+        style nps fill:#f7aebc
+        style portal-sindico fill:#f7aebc
+        style portaria fill:#f7aebc
+        style resolva-facil fill:#f7aebc
+        style vox fill:#fdff6e
+        style reuniao fill:#fdff6e
+        style appmorar fill:#8f8
+        style appsindico fill:#8f8
+        style appcolaborador fill:#8f8
+        style apps fill:#97f07b
+        style PortalSindico fill:#8d9eef
+    
+        auth[auth]
+        recibos[recibos]
+        condominios[condominios]
+        condominos[condominos]
+        notifications[notifications]
+        comodidades[comodidades]
+        apps-middle[apps-middle]
+        gdp[gdp] --> repp[repp]
+        acordos[acordos]
+        despesas[despesas]
+        resin[resin]
+        ppc[ppc]
+        reserva[reserva]
+        nps[nps]
+        portal-sindico[portal-sindico]
+        portaria[portaria]
+        resolva-facil[resolva-facil]
+        vox[vox]
+        reunião[reunião]
+        appmorar[appmorar] --> apps[apps]
+        appsindico[appsindico] --> apps[apps]
+        appcolaborador[appcolaborador] --> apps[apps]
+        apps --> auth
+        apps --> recibos
+        apps --> condominios
+        apps --> condominos
+        apps --> notifications
+        apps --> comodidades
+        apps --> gdp
+        apps --> acordos
+        apps --> despesas
+        apps --> ppc
+        apps --> reserva
+        PortalSindico[PortalSindico] --> portal-sindico
+        PortalSindico --> auth    
+    </div>
+</body>
+</html>
